@@ -1,6 +1,9 @@
 import { Component } from '@angular/core';
-import { bootstrapApplication } from '@angular/platform-browser';
+import { bootstrapApplication, platformBrowser } from '@angular/platform-browser';
 import 'zone.js';
-import { AppComponent } from './app/app.component';
+//import { AppComponent } from './app/app.component';
+import { AppModule } from './app/app.module';
 
-bootstrapApplication(AppComponent);
+//bootstrapApplication(AppComponent);
+
+platformBrowser().bootstrapModule(AppModule)
